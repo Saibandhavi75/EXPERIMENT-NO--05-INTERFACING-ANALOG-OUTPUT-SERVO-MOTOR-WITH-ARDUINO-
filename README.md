@@ -67,15 +67,32 @@ CIRCUIT DIAGRAM
 
 
 ### PROGRAM :
- 
 
+```
+Name:Aruru Sai Bandhavi
+reg no:212221240006
+```
+```
 
-
-
-
-
-
-
+#include<Servo.h>
+Servo s1;
+void setup()
+{
+  s1.attach(9);
+}
+void loop()
+{
+  for(int i=0;i<=100;i+=1)
+  {s1.write(120);
+  delay(15);
+}
+  for(int i=100; i>=0;i-=1)
+  {
+    s1.write(i);
+    delay(15);
+}
+}
+ ```
 ### Circuit diagram:
 ### Off setup:
 ![output](https://github.com/Saibandhavi75/EXPERIMENT-NO--05-INTERFACING-ANALOG-OUTPUT-SERVO-MOTOR-WITH-ARDUINO-/blob/main/r1.png?raw=true)
